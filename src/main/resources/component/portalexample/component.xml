@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <code>portalexample_card</code>
+    <description>Card PortalExample</description>
+    <installation>
+        <liquibase>
+            <changeSet datasource="servDataSource" changeLogFile="classpath:liquibase/portalexample/changeSetServ.xml" />
+        </liquibase>
+    </installation>
+</component>
