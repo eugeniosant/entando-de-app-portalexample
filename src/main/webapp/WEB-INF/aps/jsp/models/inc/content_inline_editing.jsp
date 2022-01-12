@@ -1,15 +1,15 @@
 <%@ taglib uri="/aps-core" prefix="wp" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<script src="<wp:resourceURL />administration/js/jquery-2.2.4.min.js"></script>
-<script src="<wp:resourceURL />administration/js/inline-editing/jquery-ui-1.10.1.custom.min.js"></script>
-<script src="<wp:resourceURL />administration/js/inline-editing/jqueryui-editable.min.js"></script>
+<script src="<wp:resourceURL />administration/js/jquery-2.2.4.min.js" nonce="<wp:cspNonce />"></script>
+<script src="<wp:resourceURL />administration/js/inline-editing/jquery-ui-1.10.1.custom.min.js" nonce="<wp:cspNonce />"></script>
+<script src="<wp:resourceURL />administration/js/inline-editing/jqueryui-editable.min.js" nonce="<wp:cspNonce />"></script>
 <link rel="stylesheet" href="<wp:resourceURL />administration/css/jquery-ui-1.10.1.custom.css" media="screen"/>
 <link rel="stylesheet" href="<wp:resourceURL />administration/css/jqueryui-editable.css" media="screen"/>
 
 <!-----------inclusione x-editable inline------------------------>
 <wp:ifauthorized permission="superuser">
-    <script>
+    <script  nonce="<wp:cspNonce />">
         $(function () {
             setTimeout(function () {
                 //toggle `popup` / `inline` mode

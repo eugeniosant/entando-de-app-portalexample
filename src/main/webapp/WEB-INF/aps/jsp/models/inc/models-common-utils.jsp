@@ -25,7 +25,7 @@
 
 		<%-- js global vars --%>
 		<wp:outputHeadInfo type="JS_VARS">
-			<script>
+			<script nonce="<wp:cspNonce />">
 			<!--//--><![CDATA[//><!--
 				<wp:printHeadInfo />
 			//--><!]]>
@@ -34,17 +34,17 @@
 
 		<%-- js scripts (remember to include the libraries first) --%>
 		<wp:outputHeadInfo type="JS">
-			<script src="<wp:resourceURL />static/js/<wp:printHeadInfo />"></script>
+			<script src="<wp:resourceURL />static/js/<wp:printHeadInfo />" nonce="<wp:cspNonce />"></script>
 		</wp:outputHeadInfo>
 
 		<%-- external/CDN js scripts (remember to include the libraries first) --%>
 		<wp:outputHeadInfo type="JS_EXT">
-			<script src="<wp:printHeadInfo />"></script>
+			<script src="<wp:printHeadInfo />" nonce="<wp:cspNonce />"></script>
 		</wp:outputHeadInfo>
 
 		<%-- js code --%>
 		<wp:outputHeadInfo type="JS_RAW">
-			<script>
+			<script nonce="<wp:cspNonce />">
 			<!--//--><![CDATA[//><!--
 				<wp:printHeadInfo />
 			//--><!]]>
