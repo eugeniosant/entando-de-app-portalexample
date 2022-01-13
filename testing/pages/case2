@@ -1,0 +1,18 @@
+CASE 1
+Page linked by contents
+
+- Remove page "old_town_traffic_pass_intservl" linked inside the content published in page "old_town_traffic_pass"
+Keep node info, KEEP meta, remove page config, remove template ref, remove main data
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass_intservl';
+DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass_intservl';
+DELETE FROM pages_metadata_draft WHERE code = 'old_town_traffic_pass_intservl';
+DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass_intservl';
+DELETE FROM contentrelations WHERE refpage = 'old_town_traffic_pass_intservl';
+DELETE FROM pages WHERE code = 'old_town_traffic_pass_intservl';
+
+
