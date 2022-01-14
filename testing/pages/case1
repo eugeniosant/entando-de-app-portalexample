@@ -17,6 +17,12 @@ DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
 
 
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page link in the menu redirect to the homepage because now it is an empty pages
+- the Page "Limited Traffic zone pass" Works with the current template but without widget
+
 
 --------------------------------------------------------------
 
@@ -37,6 +43,11 @@ DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass';
 2) refresh the configuration (from backoffice)
 
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal doesn't Works
 
 
 
@@ -82,7 +93,6 @@ INSERT INTO pages_metadata_online (code,groupcode,titles,modelcode,showinmenu,ex
 <config>
   <useextratitles>false</useextratitles>
 </config>',NULL);
-INSERT INTO pages (code,parentcode,pos) VALUES ('xxxx_placeholder','online_services',100);
 UPDATE pages SET parentcode = 'xxxx_placeholder' WHERE parentcode = 'old_town_traffic_pass';
 DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
 DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
@@ -93,6 +103,16 @@ DELETE FROM pages WHERE code = 'old_town_traffic_pass';
 2) refresh the configuration (from backoffice)
 
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" is not found
+- page menu in the front-end works (with the new page)
+- the child of page is still visible
+- widget replaced with Placeholder
+- the new page is visible with the placeholder template
 
 
 

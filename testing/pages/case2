@@ -2,7 +2,9 @@ CASE 1
 Page linked by contents
 
 - Remove page "old_town_traffic_pass_intservl" linked inside the content published in page "old_town_traffic_pass"
-Keep node info, KEEP meta, remove page config, remove template ref, remove main data
+Check what happens in LinkResolver when the page is not existent.
+If links to non-existing pages the default behaviour might be enough, as it will trigger the 404.
+
 
 PROCEDURE
 1) execute Scripts
@@ -20,3 +22,10 @@ DELETE FROM pages WHERE code = 'old_town_traffic_pass_intservl';
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
 
 
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page link inside the content in page "Limited Traffic zone pass" (code "old_town_traffic_pass") is still visible but redirect to the same page because the destination doesn't exists
+- the link to the old page "old_town_traffic_pass_intservl" (localhost:8080/entando-de-app/pages/en/homepage/online_services/old_town_traffic_pass/old_town_traffic_pass_intservl/)
+redirect to the 404 page

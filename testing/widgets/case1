@@ -4,7 +4,7 @@ Widget used by pages (via widget page configuration)
 
 Sub-case 1
 
-- Remove widget "card_list" from page "old_town_traffic_pass"
+- Remove widget "card_list" from page "Limited Traffic zone pass" (code "old_town_traffic_pass")
 
 PROCEDURE
 1) execute Scripts
@@ -18,6 +18,13 @@ DELETE FROM widgetcatalog WHERE code = 'card_list';
 2) refresh the configuration (from backoffice)
 
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" Works
+- widget "card_list" missing
 
 
 
@@ -39,7 +46,7 @@ VALUES ('widget_placeholder','<?xml version="1.0" encoding="UTF-8"?>
 <property key="en">Widget - PLACEHOLDER</property>
 <property key="it">Widget - PLACEHOLDER</property>
 </properties>',NULL,NULL,NULL,NULL,1,'free',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('widget_placeholder,'widget_placeholder',NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('widget_placeholder','widget_placeholder',NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
 <h2>WIDGET PLACEHOLDER</h2>',1);
 UPDATE widgetconfig SET widgetcode= 'widget_placeholder' WHERE widgetcode = 'card_list';
 UPDATE widgetconfig_draft SET widgetcode= 'widget_placeholder' WHERE widgetcode = 'card_list';
@@ -49,6 +56,13 @@ DELETE FROM widgetcatalog WHERE code = 'card_list';
 2) refresh the configuration (from backoffice)
 
 3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" Works
+- widget "card_list" missing and replaced with placeholder widget
 
 
 

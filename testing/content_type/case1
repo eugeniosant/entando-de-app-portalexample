@@ -140,10 +140,35 @@ INSERT INTO sysconfig (version,item,descr,config) VALUES ('production','contentT
     - Announcement details: link example 
 http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20
 
+FIRST TEST RESULT:
+
+- Portal Works
+- the HomePage Broken with error
+Caused by: org.entando.entando.ent.exception.EntException: Error extracting contents id
+    at com.agiletec.plugins.jacms.aps.system.services.content.widget.ContentListHelper.extractContentsId (ContentListHelper.java:159)
+    at com.agiletec.plugins.jacms.aps.system.services.content.widget.ContentListHelper.getContentsId (ContentListHelper.java:95)
+...
+...
+Caused by: java.lang.RuntimeException: Error on creation of filter instance
+    at com.agiletec.aps.system.common.entity.model.EntitySearchFilter.getInstance (EntitySearchFilter.java:408)
+    at com.agiletec.aps.system.common.entity.helper.BaseFilterUtils.getFilters (BaseFilterUtils.java:59)
+    at com.agiletec.plugins.jacms.aps.system.services.content.helper.BaseContentListHelper.getFilters (BaseContentListHelper.java:58)
+...
+...
+Caused by: org.entando.entando.ent.exception.EntException: ERROR: Entity type 'ANN' and attribute 'StartDate' not recognized
+    at com.agiletec.aps.system.common.entity.model.EntitySearchFilter.getInstance (EntitySearchFilter.java:391)
+    at com.agiletec.aps.system.common.entity.helper.BaseFilterUtils.getFilters (BaseFilterUtils.java:59)
+
+- the Page "announcements" Broken with the same error
+- the page "read announcements" works but the widget shows velocity instructions
+
 ----------------------------------------------------------------------------------------------
 
 Sub-case 1
 
 - Content type referenced by widget
 
-EQUALS then previous case but chech only page "announcements" inside Info section 
+EQUALS then previous case but check only page "announcements" inside Info section 
+
+FIRST TEST RESULT:
+Same results as before

@@ -27,5 +27,16 @@ DELETE FROM pagemodels WHERE code = 'entando-page-2columns-left';
 
 2) refresh the configuration (from backoffice)
 
-3) verify the page "Announcements", "Resolutions", "News" inside section "Info"
+3) verify the page "Announcements", "Resolutions", "News" inside section "Info" 
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Pages are not linkable because empty pages ar linked to the current page
+- the pages with that tamplate are still configurable in backoffice
+- template replaced with Placeholder
+- the page works with the template replaced with the placeholder
+
+
 
