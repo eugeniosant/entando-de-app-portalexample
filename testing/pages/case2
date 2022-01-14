@@ -15,4 +15,8 @@ DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass_intservl';
 DELETE FROM contentrelations WHERE refpage = 'old_town_traffic_pass_intservl';
 DELETE FROM pages WHERE code = 'old_town_traffic_pass_intservl';
 
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
 

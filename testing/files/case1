@@ -1,0 +1,20 @@
+CASE 1
+
+Files used by page template or by content template or widget types
+
+- Remove image "Welcome to entando" (resource id 17) used in content "CNG18" welcome in homepage, 
+and in content "CNG44" "Municipal Council" in page "municipal_council"
+
+PROCEDURE
+
+1) delete folders from fileystem, paths:
+<RESOURCE_FOLDER>/static/entando-misc-bootstrap/bootstrap/
+<RESOURCE_FOLDER>/static/less/
+<RESOURCE_FOLDER>/static/js/
+
+2) check the homepage and page "municipal_council"
+
+
+
+
+

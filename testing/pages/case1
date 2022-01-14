@@ -12,6 +12,10 @@ PROCEDURE
 DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
 DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
 
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
 
 
 --------------------------------------------------------------
@@ -29,6 +33,66 @@ DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
 DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
 DELETE FROM pages_metadata_draft WHERE code = 'old_town_traffic_pass';
 DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+
+--------------------------------------------------------------
+
+Sub-case 3 (potential alternative)
+
+- Remove page "old_town_traffic_pass" with children "old_town_traffic_pass_intservl"
+And substitute it with a page placeholder with a template placeholder
+
+NOTE (prefix "xxxx" has to be an hash)
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('template_placeholder','Template Placeholder','<?xml version="1.0" encoding="UTF-8"?>
+<frames />',NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title><@wp.currentPage param="title" /></title>
+</head>
+<body>
+<h1><@wp.currentPage param="title" /> - TEMPLATE PLACEHOLDER</h1>
+<a href="<@wp.url page="homepage" />" >Home</a><br>
+</body>
+</html>');
+INSERT INTO pages (code,parentcode,pos) VALUES ('xxxx_placeholder','online_services',100);
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('xxxx_placeholder','free','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Passs - PLACEHOLDER</property>
+<property key="it">Pass ZTLs - PLACEHOLDER</property>
+</properties>','template_placeholder',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>',NULL);
+INSERT INTO pages_metadata_online (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('xxxx_placeholder','free','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Pass - PLACEHOLDER</property>
+<property key="it">Pass ZTLs - PLACEHOLDER</property>
+</properties>','template_placeholder',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>',NULL);
+INSERT INTO pages (code,parentcode,pos) VALUES ('xxxx_placeholder','online_services',100);
+UPDATE pages SET parentcode = 'xxxx_placeholder' WHERE parentcode = 'old_town_traffic_pass';
+DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
+DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
+DELETE FROM pages_metadata_draft WHERE code = 'old_town_traffic_pass';
+DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass';
+DELETE FROM pages WHERE code = 'old_town_traffic_pass';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
 
 
 

@@ -1,0 +1,45 @@
+CASE 1
+
+Sub-case 1
+
+- Content templates referenced by contents types as default content template
+Rendering procedure of the content inspects the content-template of the found content-type and if found assumes the content placeholder
+
+(USE-CASE NOTE/EXAMPLE: the system remove defaultmodel="10005" used as default into ANN type and replace it with a custom content-template placeholder)
+
+PROCEDURE
+
+1) execute Scripts
+
+INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (100000,'ANN','ANN Placeholder','<article>
+<h1>$content.id - content Template placeholder</h1>
+</article>',NULL);
+
+UPDATE sysconfig SET descr = replace(descr, '10005', '100000') WHERE item = 'contentTypes';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page 
+http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20 
+
+---------------------------------------------
+
+Sub-case 2
+
+Content type referenced by widget
+
+(USE-CASE NOTE/EXAMPLE: the system remove defaultmodel="10012" used by content CNG18 in homepage and replace it with a custom content-template placeholder)
+
+PROCEDURE
+
+1) execute Scripts
+
+INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (200000,'CNG','CNG Placeholder','<article>
+<h1>$content.id - content Template placeholder</h1>
+</article>',NULL);
+UPDATE widgetconfig SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
+UPDATE widgetconfig_draft SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the homepage 

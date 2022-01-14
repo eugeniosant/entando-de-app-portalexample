@@ -2,8 +2,6 @@ CASE 1
 
 Assets used by contents
 
-TEST 1
-
 - Remove image "Welcome to entando" (resource id 17) used in content "CNG18" welcome in homepage, 
 and in content "CNG44" "Municipal Council" in page "municipal_council"
 
@@ -22,7 +20,7 @@ DELETE FROM resources WHERE resid = 17;
 <RESOURCE_FOLDER>/cms/images/Building_d2.png
 <RESOURCE_FOLDER>/cms/images/Building_d3.png
 
-
+3) Verify homepage and "Municipal Council" page
 
 
 

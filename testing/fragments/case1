@@ -1,0 +1,44 @@
+CASE 1
+
+Fragments invoked by other fragments or by page templates
+
+Sub-case 1
+fragment reference fragments via custom tags
+intercept the call failure to a non-existing fragment and reply with placeholder
+
+- Remove section "narrow your search" from page "announcements"
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('fragment_placeholder,NULL,NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER</h2>',1);
+DELETE FROM guifragment WHERE code = 'jacms_content_viewer_list_userfilters';
+UPDATE guifragment SET gui = replace(gui, 'jacms_content_viewer_list_userfilters', 'fragment_placeholder') WHERE gui LIKE '%jacms_content_viewer_list_userfilters%';
+UPDATE guifragment SET defaultgui = replace(defaultgui, 'jacms_content_viewer_list_userfilters', 'fragment_placeholder') WHERE defaultgui LIKE '%jacms_content_viewer_list_userfilters%';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "announcements" inside section "Info"
+
+
+--------------------------------------------------------------
+
+Sub-case 1 
+Fragments that wrap widgets
+
+- Remove fragment of widget "card_list" placed on page 'old_town_traffic_pass' and replace it with placeholder;
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM guifragment WHERE widgettypecode = 'card_list';
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('fragment_placeholder,'card_list',NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER FOR CARD WIDGET</h2>',1);
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "announcements" inside section "Info"
+
