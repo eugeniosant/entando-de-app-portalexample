@@ -2,8 +2,7 @@ CASE 1
 
 Files used by page template or by content template or widget types
 
-- Remove image "Welcome to entando" (resource id 17) used in content "CNG18" welcome in homepage, 
-and in content "CNG44" "Municipal Council" in page "municipal_council"
+- Removed static resources used by page template
 
 PROCEDURE
 
