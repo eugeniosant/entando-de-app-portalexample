@@ -1,0 +1,20 @@
+Content template referenced by widget
+
+remove defaultmodel="10012" used by content CNG18 in homepage 
+
+PROCEDURE
+
+1) execute Scripts
+
+DELETE FROM contentmodels WHERE modelid = 10012;
+
+2) refresh the configuration (from backoffice)
+
+3) verify the homepage  
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the HomePage Works
+- Placeholder template replaced

@@ -11,6 +11,7 @@ INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (2
 </article>',NULL);
 UPDATE widgetconfig SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
 UPDATE widgetconfig_draft SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
+DELETE FROM contentmodels WHERE modelid = 10012;
 
 2) refresh the configuration (from backoffice)
 

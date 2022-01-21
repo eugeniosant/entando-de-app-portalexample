@@ -381,6 +381,13 @@
             <artifactId>commons-dbcp2</artifactId>
             <scope>test</scope>
         </dependency>
+        
+        <!-- BUG FIX -->
+        <dependency>
+            <groupId>org.owasp.encoder</groupId>
+            <artifactId>encoder-jsp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
 
     </dependencies>
 
@@ -509,19 +516,17 @@
                 <db.volume.mount.path>/var/lib/pgsql/data</db.volume.mount.path>
                 <db.server.port>5432</db.server.port>
 
-                <portdb.database>portdb</portdb.database>
-                <portdb.url>jdbc:postgresql://${docker.host.address}:${db.server.local.port}/${portdb.database}
-                </portdb.url>
-                <portdb.username>portdbuser</portdb.username>
-                <portdb.password>portdb123</portdb.password>
+                <portdb.database>portalexamplePort</portdb.database>
+                <portdb.url>jdbc:postgresql://${docker.host.address}:${db.server.local.port}/${portdb.database}</portdb.url>
+                <portdb.username>agile</portdb.username>
+                <portdb.password>agile</portdb.password>
                 <portdb.jndi>java:/jdbc/portDataSource</portdb.jndi>
                 <portdb.driverClassName>org.postgresql.Driver</portdb.driverClassName>
 
-                <servdb.database>servdb</servdb.database>
-                <servdb.url>jdbc:postgresql://${docker.host.address}:${db.server.local.port}/${servdb.database}
-                </servdb.url>
-                <servdb.username>servdbuser</servdb.username>
-                <servdb.password>servdb123</servdb.password>
+                <servdb.database>portalexampleServ</servdb.database>
+                <servdb.url>jdbc:postgresql://${docker.host.address}:${db.server.local.port}/${servdb.database}</servdb.url>
+                <servdb.username>agile</servdb.username>
+                <servdb.password>agile</servdb.password>
                 <servdb.jndi>java:/jdbc/servDataSource</servdb.jndi>
                 <servdb.driverClassName>org.postgresql.Driver</servdb.driverClassName>
 
@@ -1211,6 +1216,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.8.2</version>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>license-maven-plugin</artifactId>
@@ -1224,6 +1230,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
         <pluginManagement>
             <plugins>
