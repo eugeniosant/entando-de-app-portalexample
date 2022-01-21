@@ -1,0 +1,24 @@
+Content template referenced by widget replaced with placeholder
+
+(USE-CASE NOTE/EXAMPLE: the system remove defaultmodel="10012" used by content CNG18 in homepage and replace it with a custom content-template placeholder)
+
+PROCEDURE
+
+1) execute Scripts
+
+INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (200000,'CNG','CNG Placeholder','<article>
+<h1>$content.id - Content Template placeholder</h1>
+</article>',NULL);
+UPDATE widgetconfig SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
+UPDATE widgetconfig_draft SET config = replace(config, '10012', '200000') WHERE config LIKE '%10012%';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the homepage  
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the HomePage Works
+- Placeholder template replaced
