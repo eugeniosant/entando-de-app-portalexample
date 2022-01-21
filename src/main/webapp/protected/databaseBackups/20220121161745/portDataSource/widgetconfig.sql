@@ -98,23 +98,10 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('mayor',1
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('mayor',2,'entando-widget-search_form',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('mayor',3,'entando-widget-login_form',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('mayor',24,'URP_Public_Relations_Office',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',0,'entando-widget-language_choose',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('mayor',7,'content_viewer','<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="contentId">CNG41</property>
 <property key="modelId">10014</property>
-</properties>');
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
-</properties>');
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',2,'entando-widget-search_form',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',3,'entando-widget-login_form',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',24,'URP_Public_Relations_Office',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',7,'content_viewer','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="contentId">CNG43</property>
-<property key="modelId">10001</property>
 </properties>');
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('municipal_council',0,'entando-widget-language_choose',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',7,'content_viewer','<?xml version="1.0" encoding="UTF-8"?>
@@ -269,3 +256,24 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',3,'entando-widget-login_form',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',24,'URP_Public_Relations_Office',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',15,'card_list',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',0,'entando-widget-language_choose',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',2,'entando-widget-search_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',3,'entando-widget-login_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',24,'URP_Public_Relations_Office',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',7,'content_viewer','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG43</property>
+<property key="modelId">10001</property>
+</properties>');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council',11,'row_content_viewer_list','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contents">[{modelId=10051, contentId=ANN58},{modelId=10051, contentId=ANN59},{modelId=10051, contentId=ANN60},{modelId=10051, contentId=ANN61}]</property>
+<property key="title_it">Test Uninstall Plan - List of Contents</property>
+<property key="title_en">Test Uninstall Plan - List of Contents</property>
+</properties>
+
+');

@@ -269,3 +269,11 @@ INSERT INTO widgetconfig_draft (pagecode,framepos,widgetcode,config) VALUES ('ol
 INSERT INTO widgetconfig_draft (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',3,'entando-widget-login_form',NULL);
 INSERT INTO widgetconfig_draft (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',24,'URP_Public_Relations_Office',NULL);
 INSERT INTO widgetconfig_draft (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',15,'card_list',NULL);
+INSERT INTO widgetconfig_draft (pagecode,framepos,widgetcode,config) VALUES ('council',11,'row_content_viewer_list','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contents">[{modelId=10051, contentId=ANN58},{modelId=10051, contentId=ANN59},{modelId=10051, contentId=ANN60},{modelId=10051, contentId=ANN61}]</property>
+<property key="title_it">Test Uninstall Plan - List of Contents</property>
+<property key="title_en">Test Uninstall Plan - List of Contents</property>
+</properties>
+
+');
