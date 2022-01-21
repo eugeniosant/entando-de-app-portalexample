@@ -1,0 +1,53 @@
+Assets used by contents
+- Template does no check image
+
+- Remove image "Welcome to entando" (resource id 17) used in content "CNG18" welcome in homepage
+
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+
+UPDATE contentmodels SET model = '<article>
+  <div class="hero-unit span6">
+  <h1>$content.Title.text</h1>
+  #if ( $content.Abstract.text != "" )
+  $content.Abstract.text
+  #end
+  #if ( $content.Links.size() != 0 )
+  #set ( $link = $content.Links.get(0) )
+  <p><a href="$link.destination" class="btn btn-primary btn-large">$link.text</a></p>
+  #end
+</div>
+<div class="span4 well well-small">
+<figure>
+  <img src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+  #if ( $content.Caption.text != "" )
+  <figcaption class="text-center"><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+  #end
+</figure>
+</div>
+</article>' WHERE modelid = 10012;
+DELETE FROM contentrelations WHERE refresource = '17';
+DELETE FROM resources WHERE resid = '17';
+
+2) delete files from fileystem, paths:
+<RESOURCE_FOLDER>/cms/images/Building_d0.png
+<RESOURCE_FOLDER>/cms/images/Building_d1.png
+<RESOURCE_FOLDER>/cms/images/Building_d2.png
+<RESOURCE_FOLDER>/cms/images/Building_d3.png
+
+3) refresh configuration 
+
+4) Verify homepage and "Municipal Council" page
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- Homepage Works
+- image removed but not the tag images; the section of the image is not empty, the value of the "alt" of the image attribute is shown and in the html code the attribute "src" of tag "img" is blank
+- in content editing the attribute is empty (note: there is a bug in image attribute, when the attribute is empty the buttom to set the image is missing)
+

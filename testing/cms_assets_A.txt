@@ -1,0 +1,34 @@
+Assets used by contents
+- Template checks image
+
+- Remove image "Welcome to entando" (resource id 17) used in content "CNG18" welcome in homepage, 
+and in content "CNG44" "Municipal Council" in page "municipal_council"
+
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM contentrelations WHERE refresource = '17';
+DELETE FROM resources WHERE resid = '17';
+
+2) delete files from fileystem, paths:
+<RESOURCE_FOLDER>/cms/images/Building_d0.png
+<RESOURCE_FOLDER>/cms/images/Building_d1.png
+<RESOURCE_FOLDER>/cms/images/Building_d2.png
+<RESOURCE_FOLDER>/cms/images/Building_d3.png
+
+3) refresh configuration 
+
+4) Verify homepage and "Municipal Council" page
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- Homepage Works
+- Municipal Council works
+- image removed and also the tag images (se section of the image in a page is empty)
+- in content editing the attribute is empty (note: there is a bug in image attribute, when the attribute is empty the buttom to set the image is missing)
+
