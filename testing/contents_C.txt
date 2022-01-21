@@ -1,0 +1,29 @@
+Contents embedded in a page via content widget
+
+- Remove content "Municipal Council" (code "CNG44") published in page "Municipal Council".
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM workcontentsearch WHERE contentid = 'CNG44';
+DELETE FROM workcontentrelations WHERE contentid = 'CNG44';
+DELETE FROM workcontentattributeroles WHERE contentid = 'CNG44';
+DELETE FROM contentsearch WHERE contentid = 'CNG44';
+DELETE FROM contentrelations WHERE contentid = 'CNG44' OR refcontent = 'CNG44';
+DELETE FROM contentattributeroles WHERE contentid = 'CNG44';
+DELETE FROM contents WHERE contentid = 'CNG44';
+
+2) refresh configuration 
+
+3) Verify "Municipal Council" page
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- Municipal Council works with missing content
+
+- the configuration of page "Municipal Council" works with empty content inside UI of configuration of widget "Contents - Publish a Content"
+

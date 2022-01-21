@@ -8,12 +8,8 @@ INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langc
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG41','Title','Sindaco',NULL,NULL,'it');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG43','Title','Council',NULL,NULL,'en');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG43','Title','Giunta Comunale',NULL,NULL,'it');
-INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG44','Title','Municipal Council',NULL,NULL,'en');
-INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG44','Title','Consiglio Comunale',NULL,NULL,'it');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG56','Title','Internal Servlet',NULL,NULL,'en');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG56','Title','Internal Servlet',NULL,NULL,'it');
-INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG18','Title','Welcome!',NULL,NULL,'en');
-INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG18','Title','Welcome!',NULL,NULL,'it');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG70','Title','Hello, world!',NULL,NULL,'en');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG70','Title','Hello, world!',NULL,NULL,'it');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG71','Title','Heading',NULL,NULL,'en');
@@ -90,3 +86,7 @@ INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langc
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('NWS33','Date',NULL,'2013-03-29 00:00:00',NULL,NULL);
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('NWS33','Title','The portal embraces responsiveness',NULL,NULL,'en');
 INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('NWS33','Title','The portal embraces responsiveness',NULL,NULL,'it');
+INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG44','Title','Municipal Council',NULL,NULL,'en');
+INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG44','Title','Consiglio Comunale',NULL,NULL,'it');
+INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG18','Title','Welcome!',NULL,NULL,'en');
+INSERT INTO contentsearch (contentid,attrname,textvalue,datevalue,numvalue,langcode) VALUES ('CNG18','Title','Welcome!',NULL,NULL,'it');

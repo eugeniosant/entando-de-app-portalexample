@@ -254,106 +254,78 @@ INSERT INTO sysconfig (version,item,descr,config) VALUES ('production','jpmail_c
 	</smtp>
 </mailConfig>');
 INSERT INTO sysconfig (version,item,descr,config) VALUES ('production','entandoComponentsReport','The component installation report','<?xml version="1.0" encoding="UTF-8"?>
-<reports status="OK">
-	<creation>2022-01-12 17:37:09</creation>
-	<lastupdate>2022-01-12 17:44:09</lastupdate>
+<reports status="INCOMPLETE">
+	<creation>2022-01-21 14:33:11</creation>
+	<lastupdate>2022-01-21 14:33:25</lastupdate>
 	<components>
-		<component code="entando-engine" date="2022-01-12 17:37:10" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="entando-engine" date="2022-01-21 14:33:11" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="portDataSource" status="OK" />
 				<datasource name="servDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="jacms" date="2022-01-12 17:37:17" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="jacms" date="2022-01-21 14:33:16" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="portDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="portalexample_card" date="2022-01-12 17:37:20" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="portalexample_card" date="2022-01-21 14:33:18" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="servDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="entando-admin-console" date="2022-01-12 17:37:22" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="jpmail" date="2022-01-21 14:33:19" status="INCOMPLETE">
+			<data status="INIT" />
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="NOT_AVAILABLE" />
+		</component>
+		<component code="entando-admin-console" date="2022-01-21 14:33:20" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="servDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="entando-portal-ui" date="2022-01-12 17:37:23" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="entando-portal-ui" date="2022-01-21 14:33:21" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="INIT" />
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="defaultResources" date="2022-01-12 17:37:23" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="defaultResources" date="2022-01-21 14:33:21" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="portDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="jpredis" date="2022-01-12 17:37:24" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="jpversioning" date="2022-01-21 14:33:22" status="INCOMPLETE">
+			<data status="INIT" />
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="NOT_AVAILABLE" />
+		</component>
+		<component code="jpredis" date="2022-01-21 14:33:23" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="INIT" />
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
-		<component code="jpmail" date="2022-01-12 17:44:03" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
-			<liquibase status="OK">
-				<datasource name="portDataSource" status="OK" />
-			</liquibase>
-			<postProcess status="NOT_AVAILABLE" />
-		</component>
-		<component code="jpversioning" date="2022-01-12 17:44:06" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
-			<liquibase status="OK">
-				<datasource name="portDataSource" status="OK" />
-			</liquibase>
-			<postProcess status="NOT_AVAILABLE" />
-		</component>
-		<component code="jpseo" date="2022-01-12 17:44:07" status="OK">
-			<data status="OK">
-				<datasource name="portDataSource" status="NOT_AVAILABLE" />
-				<datasource name="servDataSource" status="NOT_AVAILABLE" />
-			</data>
+		<component code="jpseo" date="2022-01-21 14:33:23" status="INCOMPLETE">
+			<data status="INIT" />
 			<liquibase status="OK">
 				<datasource name="portDataSource" status="OK" />
 			</liquibase>
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
 	</components>
-</reports>');
+</reports>
+
+');

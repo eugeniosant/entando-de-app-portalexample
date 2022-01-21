@@ -293,41 +293,6 @@ INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmod
 <p>
 	A municipality is often referred to as simply the Council without any further attempt by the speaker at making a size or scale designation, as in Council house. It is assumed the listener will already know the specific meaning of the word without further guidance.</p>
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="73" lang="en" /><text lang="en">Entando Town Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town Council</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121205170248</created><lastModified>20130314150506</lastModified></content>',NULL,NULL,'free','3.0','admin',NULL,NULL);
-INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('CNG44','CNG','Municipal Council','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG44" typecode="CNG" typedescr="Generic Content"><descr>Municipal Council</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="it">Consiglio Comunale</text><text lang="en">Municipal Council</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della Costituzione della Repubblica Italiana.</p>
-]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	A <strong>Municipal Council</strong> is the local government of Entando Town.</p>
-]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della <strong>Costituzione della Repubblica Italiana</strong>.</p>
-<p>
-	Il Consiglio Comunale &egrave; composto dal Sindaco e da un numero variabile di consiglieri, in funzione del numero di abitanti del Comune.</p>
-<p>
-	Il Consiglio comunale viene eletto direttamente dai <strong>cittadini</strong>, contestualmente all&rsquo;elezione del Sindaco, e resta in carica <strong>cinque anni</strong>.</p>
-<p>
-	Il Consiglio Comunale &egrave; organo di indirizzo e di controllo <strong>politico-amministrativo</strong> del comune. La sua competenza si limita ad atti fondamentali indicati dalla legge: Statuto dell&#39;ente e delle aziende speciali, programmi, piani finanziari, bilanci, conti consuntivi, convenzioni tra enti locali, costituzione di forme associative, etc.</p>
-<p>
-	&nbsp;</p>
-]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	A <strong>Municipal Council</strong> is the local government of Entando Town. Specifically the term can refer to the institutions of various countries that can be translated by this term.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Municipal Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Municipal Council</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121205171127</created><lastModified>20130314150712</lastModified></content>','20121205171128','20130314150712','<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG44" typecode="CNG" typedescr="Generic Content"><descr>Municipal Council</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="it">Consiglio Comunale</text><text lang="en">Municipal Council</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della Costituzione della Repubblica Italiana.</p>
-]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	A <strong>Municipal Council</strong> is the local government of Entando Town.</p>
-]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della <strong>Costituzione della Repubblica Italiana</strong>.</p>
-<p>
-	Il Consiglio Comunale &egrave; composto dal Sindaco e da un numero variabile di consiglieri, in funzione del numero di abitanti del Comune.</p>
-<p>
-	Il Consiglio comunale viene eletto direttamente dai <strong>cittadini</strong>, contestualmente all&rsquo;elezione del Sindaco, e resta in carica <strong>cinque anni</strong>.</p>
-<p>
-	Il Consiglio Comunale &egrave; organo di indirizzo e di controllo <strong>politico-amministrativo</strong> del comune. La sua competenza si limita ad atti fondamentali indicati dalla legge: Statuto dell&#39;ente e delle aziende speciali, programmi, piani finanziari, bilanci, conti consuntivi, convenzioni tra enti locali, costituzione di forme associative, etc.</p>
-<p>
-	&nbsp;</p>
-]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	A <strong>Municipal Council</strong> is the local government of Entando Town. Specifically the term can refer to the institutions of various countries that can be translated by this term.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Municipal Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Municipal Council</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121205171127</created><lastModified>20130314150712</lastModified></content>',NULL,NULL,'free','3.0','admin',NULL,NULL);
 INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('DLD48','DLD','Registry - Request Identity Card valid for foreign travel','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
 <content id="DLD48" typecode="DLD" typedescr="Download Card"><descr>Registry - Request Identity Card valid for foreign travel</descr><groups mainGroup="free" /><categories><category id="documents" /><category id="citizen_registry" /></categories><attributes><attribute name="Title" attributetype="Text"><text lang="it">Anagrafe - Richiesta Carta Identità valida per espatrio</text><text lang="en">Registry - Request Identity Card valid for foreign travel</text></attribute><attribute name="File" attributetype="Attach"><resource resourcetype="Attach" id="47" lang="en" /><text lang="it">Modulo richiesta Carta Identità valida per espatrio</text><text lang="en">Identity Card Request Form</text></attribute><attribute name="ShortDescr" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Modulo per la richiesta della carta identit&agrave; valida per espatrio.</p>
@@ -546,49 +511,6 @@ INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmod
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p> <p> Mustache brunch single-origin coffee, pitchfork hoodie messenger bag freegan fixie fingerstache twee ethical pour-over. Stumptown lomo DIY art party organic next level. Squid cliche gentrify mustache. American apparel chambray leggings PBR pour-over skateboard. Mcsweeney&#39;s next level retro tumblr, ethical fanny pack beard. Put a bird on it mustache art party, biodiesel banh mi artisan direct trade thundercats trust fund wayfarers vice authentic. Lo-fi chillwave small batch, organic pour-over williamsburg VHS narwhal leggings ennui ethnic tofu.</p>
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>',NULL,NULL,'free','1.0',NULL,NULL,NULL);
-INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('CNG18','CNG','Welcome','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	This is a demo website built using the Entando UI platform.</p>
-<p>
-	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
-<p>
-	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	<strong>Username</strong>: admin<br />
-	<strong>Password</strong>: adminadmin</p>
-]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	This is a demo website built using the Entando UI platform.</p>
-<p>
-	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
-<p>
-	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	<strong>Username</strong>: admin&nbsp;<br />
-	<strong>Password</strong>: adminadmin</p>
-<p>
-	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>10.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20150212102321</lastModified></content>','20121010173248','20150212102321','<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	This is a demo website built using the Entando UI platform.</p>
-<p>
-	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
-<p>
-	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	<strong>Username</strong>: admin<br />
-	<strong>Password</strong>: adminadmin</p>
-]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	This is a demo website built using the Entando UI platform.</p>
-<p>
-	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
-<p>
-	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	<strong>Username</strong>: admin&nbsp;<br />
-	<strong>Password</strong>: adminadmin</p>
-<p>
-	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>10.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20150212102321</lastModified></content>',NULL,NULL,'free','10.0','admin',NULL,NULL);
 INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('NWS68','NWS','Sample - News 6','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
 <content id="NWS68" typecode="NWS" typedescr="News"><descr>Sample - News 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #6</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
@@ -773,3 +695,77 @@ INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmod
 <p>
 	In this section you can find the official text of <strong>Entando Town</strong> Statute.</p>
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="74" lang="en" /><text lang="en">Entando Town Statute</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town Statute</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach"><attribute name="Attaches" attributetype="Attach"><resource resourcetype="Attach" id="45" lang="en" /><text lang="en">Statute</text></attribute></list></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121205172845</created><lastModified>20130314151301</lastModified></content>',NULL,NULL,'free','2.0','admin',NULL,NULL);
+INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('CNG18','CNG','Welcome','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
+<content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a demo website built using the Entando UI platform.</p>
+
+<p>Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
+
+<p>Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
+
+<p><strong>Username</strong>: admin<br />
+<strong>Password</strong>: adminadmin</p>
+]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a demo website built using the Entando UI platform.</p>
+
+<p>Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
+
+<p>Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
+
+<p><strong>Username</strong>: admin&nbsp;<br />
+<strong>Password</strong>: adminadmin</p>
+
+<p>Find out how many things you can customize, create a new content, a new page or even your own user.</p>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>13.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20220121144813</lastModified></content>
+','20121010173248','20220121144813','<?xml version="1.0" encoding="UTF-8"?>
+<content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a demo website built using the Entando UI platform.</p>
+
+<p>Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
+
+<p>Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
+
+<p><strong>Username</strong>: admin<br />
+<strong>Password</strong>: adminadmin</p>
+]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a demo website built using the Entando UI platform.</p>
+
+<p>Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
+
+<p>Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
+
+<p><strong>Username</strong>: admin&nbsp;<br />
+<strong>Password</strong>: adminadmin</p>
+
+<p>Find out how many things you can customize, create a new content, a new page or even your own user.</p>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>13.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20220121144813</lastModified></content>
+','20220121144813',1,'free','13.0','admin',NULL,NULL);
+INSERT INTO contents (contentid,contenttype,descr,status,workxml,created,lastmodified,onlinexml,published,sync,maingroup,currentversion,lasteditor,firsteditor,restriction) VALUES ('CNG44','CNG','Municipal Council','PUBLIC','<?xml version="1.0" encoding="UTF-8"?>
+<content id="CNG44" typecode="CNG" typedescr="Generic Content"><descr>Municipal Council</descr><groups mainGroup="free" /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Municipal Council</text><text lang="it">Consiglio Comunale</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>A <strong>Municipal Council</strong> is the local government of Entando Town.</p>
+]]></hypertext><hypertext lang="it"><![CDATA[<p>Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della Costituzione della Repubblica Italiana.</p>
+]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>A <strong>Municipal Council</strong> is the local government of Entando Town. Specifically the term can refer to the institutions of various countries that can be translated by this term.</p>
+
+<p>Test Unistall Plan - <a href="#!C;ANN57!#">Linked content inside text</a></p>
+]]></hypertext><hypertext lang="it"><![CDATA[<p>Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della <strong>Costituzione della Repubblica Italiana</strong>.</p>
+
+<p>Il Consiglio Comunale &egrave; composto dal Sindaco e da un numero variabile di consiglieri, in funzione del numero di abitanti del Comune.</p>
+
+<p>Il Consiglio comunale viene eletto direttamente dai <strong>cittadini</strong>, contestualmente all&rsquo;elezione del Sindaco, e resta in carica <strong>cinque anni</strong>.</p>
+
+<p>Il Consiglio Comunale &egrave; organo di indirizzo e di controllo <strong>politico-amministrativo</strong> del comune. La sua competenza si limita ad atti fondamentali indicati dalla legge: Statuto dell&#39;ente e delle aziende speciali, programmi, piani finanziari, bilanci, conti consuntivi, convenzioni tra enti locali, costituzione di forme associative, etc.</p>
+
+<p>&nbsp;</p>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Municipal Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Municipal Council</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="content"><contentdest>ANN57</contentdest></link><text lang="en">Test Unistall Plan - Linked content</text><properties /></attribute></list><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>4.0</version><lastEditor>admin</lastEditor><created>20121205171127</created><lastModified>20220121144724</lastModified></content>
+','20121205171128','20220121144724','<?xml version="1.0" encoding="UTF-8"?>
+<content id="CNG44" typecode="CNG" typedescr="Generic Content"><descr>Municipal Council</descr><groups mainGroup="free" /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Municipal Council</text><text lang="it">Consiglio Comunale</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>A <strong>Municipal Council</strong> is the local government of Entando Town.</p>
+]]></hypertext><hypertext lang="it"><![CDATA[<p>Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della Costituzione della Repubblica Italiana.</p>
+]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>A <strong>Municipal Council</strong> is the local government of Entando Town. Specifically the term can refer to the institutions of various countries that can be translated by this term.</p>
+
+<p>Test Unistall Plan - <a href="#!C;ANN57!#">Linked content inside text</a></p>
+]]></hypertext><hypertext lang="it"><![CDATA[<p>Il <strong>Consiglio Comunale</strong>, secondo il D.Lgs. 267/2000 (Testo unico delle leggi sull&#39;ordinamento degli enti locali) &egrave; l&#39;assemblea pubblica rappresentativa di ogni Comune, ente locale previsto dall&#39;art. 114 della <strong>Costituzione della Repubblica Italiana</strong>.</p>
+
+<p>Il Consiglio Comunale &egrave; composto dal Sindaco e da un numero variabile di consiglieri, in funzione del numero di abitanti del Comune.</p>
+
+<p>Il Consiglio comunale viene eletto direttamente dai <strong>cittadini</strong>, contestualmente all&rsquo;elezione del Sindaco, e resta in carica <strong>cinque anni</strong>.</p>
+
+<p>Il Consiglio Comunale &egrave; organo di indirizzo e di controllo <strong>politico-amministrativo</strong> del comune. La sua competenza si limita ad atti fondamentali indicati dalla legge: Statuto dell&#39;ente e delle aziende speciali, programmi, piani finanziari, bilanci, conti consuntivi, convenzioni tra enti locali, costituzione di forme associative, etc.</p>
+
+<p>&nbsp;</p>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Municipal Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Municipal Council</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="content"><contentdest>ANN57</contentdest></link><text lang="en">Test Unistall Plan - Linked content</text><properties /></attribute></list><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>4.0</version><lastEditor>admin</lastEditor><created>20121205171127</created><lastModified>20220121144724</lastModified></content>
+','20220121144724',1,'free','4.0','admin',NULL,NULL);

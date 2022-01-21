@@ -1,0 +1,33 @@
+Contents referenced by contents via link attribute or link on RTF
+
+- Remove content "Sample - Announcement 1" (id "ANN57") linked inside content "Municipal Council" in page "Municipal Council".
+The content is linked both in text body and into attribute
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM workcontentsearch WHERE contentid = 'ANN57';
+DELETE FROM workcontentrelations WHERE contentid = 'ANN57';
+DELETE FROM workcontentattributeroles WHERE contentid = 'ANN57';
+DELETE FROM contentsearch WHERE contentid = 'ANN57';
+DELETE FROM contentrelations WHERE contentid = 'ANN57' OR refcontent = 'ANN57';
+DELETE FROM contentattributeroles WHERE contentid = 'ANN57';
+DELETE FROM contents WHERE contentid = 'ANN57';
+
+2) refresh configuration 
+
+3) Verify "Municipal Council" page
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- Municipal Council works
+- Link inside text still present but the destination is the page itself
+- Link inside attribute still present but the destination is the deleted content inside the on-the-fly page; 
+the renderization of the destination of that link is the correct "on-the-fly" page but with empty main section
+
+- the content editing of content "Municipal Council" works with right message inside link attribute ("The referenced content is not valid")
+
