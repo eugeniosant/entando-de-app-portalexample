@@ -1,0 +1,19 @@
+Content templates referenced by contents types as default content template
+
+Remove defaultmodel="10005" used as default into ANN type
+
+PROCEDURE
+
+1) execute Scripts
+DELETE FROM contentmodels WHERE modelid = 10005;
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page 
+http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20 
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page Works and shows the message "Content model 10005 undefined"

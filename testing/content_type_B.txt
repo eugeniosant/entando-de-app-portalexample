@@ -1,0 +1,182 @@
+Content type referenced by content templates
+
+- Remove content type "Announcement" (code "ANN") WITH placeholder
+
+(USE-CASE NOTE/EXAMPLE: the system Remove "ANN" content type and replace it with content of the same type code (and content-template) but with no attributes)
+
+Remove "ANN" content type used in list in homepage.
+Check also page (on-the-fly page for ANN type):
+http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20
+
+PROCEDURE
+
+1) execute Scripts
+...........................
+
+DELETE FROM sysconfig WHERE item = 'contentTypes';
+INSERT INTO sysconfig (version,item,descr,config) VALUES ('production','contentTypes','Definition of the Content Types','<?xml version="1.0" encoding="UTF-8"?>
+<contenttypes>
+    <contenttype typecode="ANN" typedescr="Announcement - PLACEHOLDER" viewpage="announcements_read" listmodel="10051" defaultmodel="10005" />
+    <contenttype typecode="CNG" typedescr="Generic Content" viewpage="announcements_read" listmodel="10011" defaultmodel="10001">
+        <attributes>
+                <attribute name="Title" attributetype="Text" searcheable="true" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                        <roles>
+                                <role>jacms:title</role>
+                        </roles>
+                </attribute>
+                <attribute name="Abstract" attributetype="Hypertext" indexingtype="TEXT" />
+                <attribute name="MainBody" attributetype="Hypertext" description="Main Body" indexingtype="TEXT" />
+                <attribute name="Picture" attributetype="Image" />
+                <attribute name="Caption" attributetype="Text" indexingtype="TEXT" />
+                <list name="Links" attributetype="Monolist">
+                        <nestedtype>
+                                <attribute name="Links" attributetype="Link" indexingtype="TEXT" />
+                        </nestedtype>
+                </list>
+                <list name="Attaches" attributetype="Monolist">
+                        <nestedtype>
+                                <attribute name="Attaches" attributetype="Attach" indexingtype="TEXT" />
+                        </nestedtype>
+                </list>
+        </attributes>
+    </contenttype>
+    <contenttype typecode="DLD" typedescr="Download Card" viewpage="download" listmodel="10031" defaultmodel="10003">
+        <attributes>
+                <attribute name="Title" attributetype="Text" searcheable="true" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                        <roles>
+                                <role>jacms:title</role>
+                        </roles>
+                </attribute>
+                <attribute name="File" attributetype="Attach">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                </attribute>
+                <attribute name="ShortDescr" attributetype="Hypertext" description="Short Description" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                </attribute>
+                <attribute name="LongDescr" attributetype="Hypertext" description="Long Description" indexingtype="TEXT" />
+                <attribute name="Picture" attributetype="Image" />
+                <attribute name="Caption" attributetype="Text" indexingtype="TEXT" />
+        </attributes>
+    </contenttype>
+    <contenttype typecode="NWS" typedescr="News" viewpage="news_read" listmodel="10021" defaultmodel="10002">
+        <attributes>
+                <attribute name="Date" attributetype="Date" searcheable="true">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                </attribute>
+                <attribute name="Title" attributetype="Text" searcheable="true" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                        <roles>
+                                <role>jacms:title</role>
+                        </roles>
+                </attribute>
+                <attribute name="Abstract" attributetype="Hypertext" indexingtype="TEXT" />
+                <attribute name="MainBody" attributetype="Hypertext" description="Main Body" indexingtype="TEXT">
+                        <validations />
+                </attribute>
+                <attribute name="Picture" attributetype="Image" />
+                <attribute name="Caption" attributetype="Text" indexingtype="TEXT" />
+                <list name="Links" attributetype="Monolist">
+                        <nestedtype>
+                                <attribute name="Links" attributetype="Link" indexingtype="TEXT" />
+                        </nestedtype>
+                </list>
+                <list name="Attaches" attributetype="Monolist">
+                        <nestedtype>
+                                <attribute name="Attaches" attributetype="Attach" indexingtype="TEXT" />
+                        </nestedtype>
+                </list>
+        </attributes>
+    </contenttype>
+    <contenttype typecode="RSL" typedescr="Resolution" viewpage="resolutions_read" listmodel="10041" defaultmodel="10004">
+        <attributes>
+                <attribute name="Number" attributetype="Number" searcheable="true" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                </attribute>
+                <attribute name="Date" attributetype="Date" searcheable="true">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                </attribute>
+                <attribute name="Title" attributetype="Longtext" indexingtype="TEXT">
+                        <validations>
+                                <required>true</required>
+                        </validations>
+                        <roles>
+                                <role>jacms:title</role>
+                        </roles>
+                </attribute>
+                <attribute name="Summary" attributetype="Hypertext" indexingtype="TEXT" />
+                <list name="Documents" attributetype="Monolist">
+                        <nestedtype>
+                                <attribute name="Documents" attributetype="Attach" />
+                        </nestedtype>
+                </list>
+        </attributes>
+    </contenttype>
+</contenttypes>');
+
+2) refresh configuration 
+3) check 
+    - homepage 
+    - page "announcements" inside Info section 
+    - Announcement details: link example 
+http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the HomePage Broken with error
+Caused by: org.entando.entando.ent.exception.EntException: Error extracting contents id
+    at com.agiletec.plugins.jacms.aps.system.services.content.widget.ContentListHelper.extractContentsId (ContentListHelper.java:159)
+    at com.agiletec.plugins.jacms.aps.system.services.content.widget.ContentListHelper.getContentsId (ContentListHelper.java:95)
+...
+...
+Caused by: java.lang.RuntimeException: Error on creation of filter instance
+    at com.agiletec.aps.system.common.entity.model.EntitySearchFilter.getInstance (EntitySearchFilter.java:408)
+    at com.agiletec.aps.system.common.entity.helper.BaseFilterUtils.getFilters (BaseFilterUtils.java:59)
+    at com.agiletec.plugins.jacms.aps.system.services.content.helper.BaseContentListHelper.getFilters (BaseContentListHelper.java:58)
+...
+...
+Caused by: org.entando.entando.ent.exception.EntException: ERROR: Entity type 'ANN' and attribute 'StartDate' not recognized
+    at com.agiletec.aps.system.common.entity.model.EntitySearchFilter.getInstance (EntitySearchFilter.java:391)
+    at com.agiletec.aps.system.common.entity.helper.BaseFilterUtils.getFilters (BaseFilterUtils.java:59)
+
+- the Page "announcements" Broken with the same error
+- the page "read announcements" works but the widget shows velocity instructions
+
+- content list UI still shows contents based on the placeholder type, and they are editable (but with empty attributes).
+- Content template UI shows templates based on the placeholder type, and they are editable.
+- The Config UI of each content widget is still usable
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+Sub-case 1
+
+- Content type referenced by widget
+
+EQUALS then previous case but check only page "announcements" inside Info section 
+
+FIRST TEST RESULT:
+Same results as before

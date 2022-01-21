@@ -1,0 +1,26 @@
+Content templates referenced by contents types as default content template and replace it with placeholder
+
+(USE-CASE NOTE/EXAMPLE: the system remove defaultmodel="10005" used as default into ANN type and replace it with a custom content-template placeholder)
+
+PROCEDURE
+
+1) execute Scripts
+
+INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (100000,'ANN','ANN Placeholder','<article>
+<h1>$content.id - content Template placeholder</h1>
+</article>',NULL);
+UPDATE sysconfig SET config = replace(config, '10005', '100000') WHERE item = 'contentTypes';
+DELETE FROM contentmodels WHERE modelid = 10005;
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page 
+http://localhost:8080/entando-de-app/pages/en/homepage/informations/announcements/announcements_read/?contentId=ANN20 
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page Works
+- template replaced with Placeholder
+- template replaced with placeholder in content type configuration
