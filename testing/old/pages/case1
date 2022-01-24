@@ -3,7 +3,7 @@ CASE 1
 Sub-case 1
 
 - Remove page "old_town_traffic_pass" with children "old_town_traffic_pass_intservl"
-Keep node info, KEEP meta, remove page config, remove template ref, remove main data
+Keep node info, KEEP meta, remove page config
 
 PROCEDURE
 1) execute Scripts

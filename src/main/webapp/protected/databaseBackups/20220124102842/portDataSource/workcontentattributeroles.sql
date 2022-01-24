@@ -1,4 +1,3 @@
-INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG55','Title','jacms:title');
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG8','Title','jacms:title');
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG9','Title','jacms:title');
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG41','Title','jacms:title');
@@ -39,3 +38,4 @@ INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('NWS
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('NWS33','Title','jacms:title');
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG44','Title','jacms:title');
 INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG18','Title','jacms:title');
+INSERT INTO workcontentattributeroles (contentid,attrname,rolename) VALUES ('CNG55','Title','jacms:title');

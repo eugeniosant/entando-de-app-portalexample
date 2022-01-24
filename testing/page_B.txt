@@ -1,0 +1,20 @@
+- Remove page "old_town_traffic_pass" with children "old_town_traffic_pass_intservl"
+Keep node info, REMOVE meta, remove page config
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
+DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
+DELETE FROM pages_metadata_draft WHERE code = 'old_town_traffic_pass';
+DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal doesn't Works

@@ -211,3 +211,39 @@ $content.MainBody.text
   </ul>
 #end
 </article>',NULL);
+INSERT INTO contentmodels (modelid,contenttype,descr,model,stylesheet) VALUES (10901,'CNG','Full For test','<article>
+  <h1>$content.Title.text</h1>
+#if ( $content.Picture.getImagePath("0") != "" )
+<figure class="well well-small text-center">
+  <img src="$content.Picture.getImagePath("0")" alt="$content.Picture.text" />
+  #if ( $content.Caption.text != "" )
+  <figcaption><p class="margin-medium-all">$content.Caption.text</p></figcaption>
+  #end
+</figure>
+#end
+#if ( $content.MainBody.text != "" )
+$content.MainBody.text
+#end
+#if ($content.Attaches.size()>0)
+  <h2>$i18n.getLabel("CNG_ATTACHMENTS")</h2>
+  <ul>
+  #foreach ($item in $content.Attaches )
+    <li><a href="$item.attachPath">$item.text</a></li>
+  #end
+  </ul>
+#end
+#if ($content.Links.size()>0)
+  <h2>$i18n.getLabel("CNG_LINKS")</h2>
+  <ul>
+  #foreach ($item in $content.Links)
+    <li><a href="$item.destination">$item.text</a></li>
+  #end
+  </ul>
+#end
+<h3>Test Link for uninstall plan - cheked link</h3>
+#if ( $content.TestLink.destination != "" )
+<p><a href="$content.TestLink.destination">$content.TestLink.text</a></p>
+#end
+<h3>Test Link for uninstall plan - uncheked link</h3>
+<p><a href="$content.TestLink2.destination">$content.TestLink2.text</a></p>
+</article>',NULL);

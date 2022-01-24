@@ -1,0 +1,58 @@
+- Remove page "old_town_traffic_pass" with children "old_town_traffic_pass_intservl"
+Keep node info, replace metadata with placeholder, remove page config
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('template_placeholder','Template Placeholder','<?xml version="1.0" encoding="UTF-8"?>
+<frames />',NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title><@wp.currentPage param="title" /></title>
+</head>
+<body>
+<h1><@wp.currentPage param="title" /> - TEMPLATE PLACEHOLDER</h1>
+<a href="<@wp.url page="homepage" />" >Home</a><br>
+</body>
+</html>');
+UPDATE pages_metadata_draft
+	SET titles = '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Passs - PLACEHOLDER</property>
+<property key="it">Pass ZTLs - PLACEHOLDER</property>
+</properties>', modelcode = template_placeholder', showinmenu = 2, extraconfig = '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>', updatedat = NULL WHERE code = 'old_town_traffic_pass';
+UPDATE pages_metadata_online
+	SET titles = '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Passs - PLACEHOLDER</property>
+<property key="it">Pass ZTLs - PLACEHOLDER</property>
+</properties>', modelcode = template_placeholder', showinmenu = 2, extraconfig = '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>', updatedat = NULL WHERE code = 'old_town_traffic_pass';
+DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass';
+DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" still visible
+- page menu in the front-end works
+- the child of page is still visible
+- the new page is visible with the placeholder template
+
+
+
+
+
+

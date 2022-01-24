@@ -107,7 +107,7 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('municipa
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass',7,'content_viewer','<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="contentId">CNG55</property>
-<property key="modelId">10001</property>
+<property key="modelId">10901</property>
 </properties>');
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass_intservl',0,'entando-widget-language_choose',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('old_town_traffic_pass_intservl',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
