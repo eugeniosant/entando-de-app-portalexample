@@ -1,0 +1,19 @@
+Fragments that wrap widgets
+
+- Remove fragment of widget "card_list" with a placeholder;
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM guifragment WHERE widgettypecode = 'card_list';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" doesn't Works (it brokes with error)

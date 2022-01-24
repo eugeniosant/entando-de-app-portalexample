@@ -1,0 +1,50 @@
+Fragments invoked by other fragments or by page templates (fragment reference fragments via custom tags)
+
+- Remove section "narrow your search" from page "announcements" and replace the text fragment with a placeholder
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+UPDATE guifragment SET gui = '<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER</h2>', defaultgui = NULL WHERE code = 'jacms_content_viewer_list_userfilters';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "announcements" inside section "Info"
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Announcements Works
+- fragment shows the new text
+
+
+---------------------------------------
+
+** ALTERNATIVE WAY ** **REMAP REFERENCES**
+
+Fragments invoked by other fragments or by page templates (fragment reference fragments via custom tags)
+
+- Remove section "narrow your search" from page "announcements" and replace the fragment with a new fragment "placeholder"
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('fragment_placeholder',NULL,NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER</h2>',1);
+DELETE FROM guifragment WHERE code = 'jacms_content_viewer_list_userfilters';
+UPDATE guifragment SET gui = replace(gui, 'jacms_content_viewer_list_userfilters', 'fragment_placeholder') WHERE gui LIKE '%jacms_content_viewer_list_userfilters%';
+UPDATE guifragment SET defaultgui = replace(defaultgui, 'jacms_content_viewer_list_userfilters', 'fragment_placeholder') WHERE defaultgui LIKE '%jacms_content_viewer_list_userfilters%';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "announcements" inside section "Info"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Announcements Works
+- fragment replaced with Placeholder

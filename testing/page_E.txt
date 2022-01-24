@@ -1,0 +1,26 @@
+Page linked by contents
+
+- Remove page "old_town_traffic_pass_intservl" linked inside the content published in page "old_town_traffic_pass".
+Check what happens in Link in section "Test Link for uninstall plan - cheked link" when the page is not existent.
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM widgetconfig WHERE pagecode = 'old_town_traffic_pass_intservl';
+DELETE FROM widgetconfig_draft WHERE pagecode = 'old_town_traffic_pass_intservl';
+DELETE FROM pages_metadata_draft WHERE code = 'old_town_traffic_pass_intservl';
+DELETE FROM pages_metadata_online WHERE code = 'old_town_traffic_pass_intservl';
+DELETE FROM contentrelations WHERE refpage = 'old_town_traffic_pass_intservl';
+DELETE FROM pages WHERE code = 'old_town_traffic_pass_intservl';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page link inside the text in page "Limited Traffic zone pass" (code "old_town_traffic_pass") is still visible but redirect to the same page because the destination doesn't exists
+- the destination to the old page "old_town_traffic_pass_intservl" (localhost:8080/entando-de-app/pages/en/homepage/online_services/old_town_traffic_pass/old_town_traffic_pass_intservl/)
+redirect to the 404 page

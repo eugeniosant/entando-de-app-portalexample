@@ -1,0 +1,19 @@
+Fragments invoked by other fragments or by page templates (fragment reference fragments via custom tags)
+
+- Remove section "narrow your search" from page "announcements"
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM guifragment WHERE code = 'jacms_content_viewer_list_userfilters';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "announcements" inside section "Info"
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Announcements Works
+- fragment shows the message "The fragment 'jacms_content_viewer_list_userfilters' is not available"

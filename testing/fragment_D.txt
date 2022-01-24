@@ -1,0 +1,49 @@
+Fragments that wrap widgets
+
+- Replace the text of fragment of widget "card_list" with a placeholder;
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+UPDATE guifragment SET gui = '<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER</h2>', defaultgui = NULL WHERE widgettypecode = 'card_list';
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" Works
+- text of widget replaced with Placeholder
+
+
+---------------------------------------
+
+** ALTERNATIVE WAY ** **REMAP REFERENCES**
+Fragments that wrap widgets
+
+- Remove fragment of widget "card_list" placed on page 'old_town_traffic_pass' and replace it with placeholder;
+
+PROCEDURE
+1) execute Scripts
+
+-- DATABASE *Port
+DELETE FROM guifragment WHERE widgettypecode = 'card_list';
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('fragment_placeholder','card_list',NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+<h2>FRAGMENT PLACEHOLDER FOR CARD WIDGET</h2>',1);
+
+2) refresh the configuration (from backoffice)
+
+3) verify the page "Limited Traffic zone pass" inside section "Online Services"
+
+
+FIRST TEST RESULT:
+
+- Portal Works
+- the Page "Limited Traffic zone pass" Works
+- widget replaced with Placeholder
+
