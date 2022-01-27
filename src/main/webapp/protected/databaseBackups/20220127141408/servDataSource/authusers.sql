@@ -1,0 +1,3 @@
+INSERT INTO authusers (username,passwd,registrationdate,lastaccess,lastpasswordchange,active) VALUES ('admin','{bcrypt}$2a$10$R8XmUZZO7H5TCELMXOfx3OMtT1LSDcJGdq/2pGXesT.l4VSiGhs7m','2008-10-10 00:00:00','2022-01-27 00:00:00','2022-01-12 00:00:00',1);
+INSERT INTO authusers (username,passwd,registrationdate,lastaccess,lastpasswordchange,active) VALUES ('reserved1','{bcrypt}$2a$10$Sye85qXphcCR.U8ywrIrAe6XtENHbJC1E8eYaNt9WMGkmE18Kvyjq','2022-01-27 00:00:00',NULL,NULL,1);
+INSERT INTO authusers (username,passwd,registrationdate,lastaccess,lastpasswordchange,active) VALUES ('reserved2','{bcrypt}$2a$10$gnWp86t7M5wS/gXG9kUO2utxPhhQWbigwqNslHsZ2hW87TE5dc5Fa','2022-01-27 00:00:00',NULL,NULL,1);
