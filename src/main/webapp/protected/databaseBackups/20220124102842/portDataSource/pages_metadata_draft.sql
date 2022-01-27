@@ -59,14 +59,6 @@ INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,ext
 <config>
   <useextratitles>true</useextratitles>
 </config>',NULL);
-INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('resolutions','free','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Resolutions</property>
-<property key="it">Delibere</property>
-</properties>','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>',NULL);
 INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('news','free','<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">News</property>
@@ -203,3 +195,67 @@ INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,ext
 <config>
   <useextratitles>false</useextratitles>
 </config>','2022-01-21 16:17:24');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('resolutions_giunta','free','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions - giunta</property>
+<property key="it">Delibere di Giunta</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-25 14:35:13');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('resolutions_council','free','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions - council</property>
+<property key="it">Delibere di Consiglio</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-25 14:35:18');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('resolutions','free','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions</property>
+<property key="it">Delibere</property>
+</properties>','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>','2022-01-25 14:36:46');

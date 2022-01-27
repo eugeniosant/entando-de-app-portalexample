@@ -1,0 +1,28 @@
+Remove category with child
+
+- Remove category "resolutions_giunta" used in contents "RSL28" and "RSL32"
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+
+DELETE FROM workcontentrelations WHERE refcategory = 'resolutions_giunta';
+DELETE FROM contentrelations WHERE refcategory = 'resolutions_giunta';
+DELETE FROM resourcerelations WHERE refcategory = 'resolutions_giunta';
+DELETE FROM categories WHERE catcode= 'resolutions_giunta';
+
+2) refresh configuration 
+
+3) Verify contents "RSL28" and "RSL32"
+
+
+FIRST TEST RESULT:
+
+- Category "resolutions_giunta" is still visible in contents "RSL28" and "RSL32" ** ERROR **
+
+
+- Problem category tree in case is not upgraded after refresh of configuration. If user try to add a category with the same code an errorr occurs
+<<A category with the code 'resolutions_giunta' already exists>>. *** TO ANALYZE - FIX ***
+Only a reboot works

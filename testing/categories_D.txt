@@ -1,0 +1,25 @@
+Remove category with joined contents
+
+- Substitute category "resolutions" with a placeholder
+
+PROCEDURE
+
+1) execute Scripts
+
+-- DATABASE *Port
+
+UPDATE categories SET titles = '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions - PLACEHOLDER</property>
+<property key="it">Delibere - PLACEHOLDER</property>
+</properties>' WHERE catcode = 'resolutions';
+
+2) refresh configuration 
+
+3) Verify portal
+
+
+FIRST TEST RESULT:
+
+- Everything ok
+

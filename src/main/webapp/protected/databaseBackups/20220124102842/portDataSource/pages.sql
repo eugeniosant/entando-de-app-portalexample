@@ -24,3 +24,5 @@ INSERT INTO pages (code,parentcode,pos) VALUES ('old_town_traffic_pass','online_
 INSERT INTO pages (code,parentcode,pos) VALUES ('old_town_traffic_pass_intservl','old_town_traffic_pass',1);
 INSERT INTO pages (code,parentcode,pos) VALUES ('public_api','online_services',4);
 INSERT INTO pages (code,parentcode,pos) VALUES ('informations','homepage',3);
+INSERT INTO pages (code,parentcode,pos) VALUES ('resolutions_giunta','resolutions',2);
+INSERT INTO pages (code,parentcode,pos) VALUES ('resolutions_council','resolutions',3);

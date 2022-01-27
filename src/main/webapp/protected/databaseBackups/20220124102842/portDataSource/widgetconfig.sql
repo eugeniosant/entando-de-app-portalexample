@@ -25,15 +25,6 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('announce
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('announcements',3,'entando-widget-login_form',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('announcements',4,'entando-widget-navigation_breadcrumbs',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('announcements',11,'ANN_Archive',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',0,'entando-widget-language_choose',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
-</properties>');
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',2,'entando-widget-search_form',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',3,'entando-widget-login_form',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',4,'entando-widget-navigation_breadcrumbs',NULL);
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',11,'RSL_Archive',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('homepage',9,'RSL_Latest',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('search_result',0,'entando-widget-language_choose',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('search_result',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
@@ -199,10 +190,6 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('announce
 <properties>
 <property key="navSpec">code(informations).subtree(1)</property>
 </properties>');
-INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',5,'entando-widget-navigation_menu','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="navSpec">code(informations).subtree(1)</property>
-</properties>');
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('documents',0,'entando-widget-language_choose',NULL);
 INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('documents',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
 <properties>
@@ -274,6 +261,75 @@ INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('council'
 <property key="contents">[{modelId=10051, contentId=ANN58},{modelId=10051, contentId=ANN59},{modelId=10051, contentId=ANN60},{modelId=10051, contentId=ANN61}]</property>
 <property key="title_it">Test Uninstall Plan - List of Contents</property>
 <property key="title_en">Test Uninstall Plan - List of Contents</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',0,'entando-widget-language_choose',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',2,'entando-widget-search_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',3,'entando-widget-login_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',4,'entando-widget-navigation_breadcrumbs',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',5,'entando-widget-navigation_menu','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_giunta',11,'content_viewer_list','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="modelId">10041</property>
+<property key="maxElemForItem">10</property>
+<property key="title_it">Giunta Resolutions</property>
+<property key="title_en">Giunta Resolutions</property>
+<property key="categories">resolutions_giunta</property>
+<property key="contentType">RSL</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',0,'entando-widget-language_choose',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',2,'entando-widget-search_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',3,'entando-widget-login_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',4,'entando-widget-navigation_breadcrumbs',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',5,'entando-widget-navigation_menu','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions_council',11,'content_viewer_list','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="modelId">10041</property>
+<property key="maxElemForItem">10</property>
+<property key="title_it">Delibere di Consiglio</property>
+<property key="title_en">Council Resolutions</property>
+<property key="categories">resolutions_council</property>
+<property key="contentType">RSL</property>
+</properties>
+
+');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',0,'entando-widget-language_choose',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',1,'entando-widget-navigation_bar','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>');
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',2,'entando-widget-search_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',3,'entando-widget-login_form',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',4,'entando-widget-navigation_breadcrumbs',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',11,'RSL_Archive',NULL);
+INSERT INTO widgetconfig (pagecode,framepos,widgetcode,config) VALUES ('resolutions',5,'entando-widget-navigation_menu','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1) + code(resolutions_giunta) + code(resolutions_council)</property>
 </properties>
 
 ');
