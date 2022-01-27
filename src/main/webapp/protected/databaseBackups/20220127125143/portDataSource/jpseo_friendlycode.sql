@@ -1,0 +1,12 @@
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('welcome',NULL,'CNG18','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('municipal_council',NULL,'CNG44','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('consiglio_comunale',NULL,'CNG44','it');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('application_service_example',NULL,'CNG55','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('esempio_servizio_applicativo',NULL,'CNG55','it');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('reserved_1__lorem_ipsum_for_the_management_of_dolor_sit_amet__1',NULL,'ANN132','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('reserved_1__lorem_ipsum_for_the_management_of_dolor_sit_amet__2',NULL,'ANN134','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('reserved_1__lorem_ipsum_for_the_management_of_dolor_sit_amet__3',NULL,'ANN136','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('reserved_2__lorem_ipsum_for_the_management_of_dolor_sit_amet__1',NULL,'ANN138','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('group_reserved_2__lorem_ipsum_for_the_management_of_dolor_sit_amet__2',NULL,'ANN141','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('group_reserved_2__lorem_ipsum_for_the_management_of_dolor_sit_amet__3',NULL,'ANN144','en');
+INSERT INTO jpseo_friendlycode (friendlycode,pagecode,contentid,langcode) VALUES ('','reserved_group_2_enabled',NULL,'it');

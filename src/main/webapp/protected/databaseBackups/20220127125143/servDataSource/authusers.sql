@@ -1,0 +1,1 @@
+INSERT INTO authusers (username,passwd,registrationdate,lastaccess,lastpasswordchange,active) VALUES ('admin','{bcrypt}$2a$10$R8XmUZZO7H5TCELMXOfx3OMtT1LSDcJGdq/2pGXesT.l4VSiGhs7m','2008-10-10 00:00:00','2022-01-27 00:00:00','2022-01-12 00:00:00',1);

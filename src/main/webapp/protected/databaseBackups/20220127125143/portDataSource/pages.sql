@@ -26,3 +26,7 @@ INSERT INTO pages (code,parentcode,pos) VALUES ('public_api','online_services',4
 INSERT INTO pages (code,parentcode,pos) VALUES ('informations','homepage',3);
 INSERT INTO pages (code,parentcode,pos) VALUES ('resolutions_giunta','resolutions',2);
 INSERT INTO pages (code,parentcode,pos) VALUES ('resolutions_council','resolutions',3);
+INSERT INTO pages (code,parentcode,pos) VALUES ('reserved_group_1','informations',4);
+INSERT INTO pages (code,parentcode,pos) VALUES ('reserved_group_1_enabled','informations',5);
+INSERT INTO pages (code,parentcode,pos) VALUES ('reserved_group_2_enabled','informations',7);
+INSERT INTO pages (code,parentcode,pos) VALUES ('reserved_group_2','informations',6);

@@ -259,3 +259,121 @@ INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,ext
 <config>
   <useextratitles>true</useextratitles>
 </config>','2022-01-25 14:36:46');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('reserved_group_1','reserved_1','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Reserved group 1</property>
+<property key="it">Reserved group 1</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-27 12:45:12');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('reserved_group_1_enabled','reserved_1','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Reserved group 1 - enabled</property>
+<property key="it">Reserved group 1 - enabled</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+  <extragroups>
+    <group name="free" />
+  </extragroups>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-27 12:50:28');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('reserved_group_2_enabled','reserved_2','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Reserved group 2 - enabled</property>
+<property key="it">Reserved group 2 - enabled</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+  <extragroups>
+    <group name="reserved_1" />
+  </extragroups>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-27 12:51:30');
+INSERT INTO pages_metadata_draft (code,groupcode,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('reserved_group_2','reserved_2','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Reserved group 2</property>
+<property key="it">Reserved group 2</property>
+</properties>
+
+','entando-page-2columns-left',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+  <useextradescriptions>false</useextradescriptions>
+  <descriptions>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </descriptions>
+  <keywords>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </keywords>
+  <friendlycode>
+    <property key="en" useDefaultLang="false" />
+    <property key="it" useDefaultLang="false" />
+  </friendlycode>
+  <complexParameters />
+</config>
+
+','2022-01-27 12:51:04');
